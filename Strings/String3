@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main (){
+
+    int num, counter = 0, More = 0;
+    char string [30];
+    scanf("%d", &num);
+
+    for (int i = 0; i < num; i++){
+        scanf("%s", string);
+    
+    while (string[counter] != '\0'){
+        counter++;
+    }
+
+    if (More < counter){
+        More = counter;
+    }
+    counter = 0;
+    }
+    printf("%d", More);
+    return 0;
+}
