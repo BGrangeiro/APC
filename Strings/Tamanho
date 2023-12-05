@@ -1,1 +1,19 @@
-a
+#include <stdio.h>
+
+ int size (char str1[]){
+        int counter = 0;
+        while (str1[counter] != '\0'){
+            counter++;
+        }
+         return counter;
+    }
+
+int main (void){
+    
+    char str[100];
+    scanf("%s", str);
+    int sizeon = size(str);
+
+    printf("%d", sizeon);
+    return 0; 
+}
